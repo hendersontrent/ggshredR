@@ -53,6 +53,7 @@ theme_shredR <- function(grids = FALSE){
           axis.title = ggplot2::element_text(colour = "#F652A0", face = "bold"),
           panel.border = ggplot2::element_blank(),
           panel.grid.minor = ggplot2::element_blank(),
+          panel.grid.major = ggplot2::element_blank(),
           axis.line = ggplot2::element_line(colour = "#F652A0"),
           panel.background = ggplot2::element_rect(fill = "#E7F2F8", colour = "#E7F2F8"),
           plot.background = ggplot2::element_rect(fill = "#E7F2F8", colour = "#E7F2F8"),
