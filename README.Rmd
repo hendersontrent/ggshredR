@@ -46,9 +46,9 @@ scales::show_col(ggshredR:::shredR_palette)
 Use `scale_colour_shredR()` to apply the theme for colour parameters.
 
 ```{r}
-ggplot(mpg, aes(x = cyl, y = cty, colour = drv, size = displ)) +
+ggplot(mpg, aes(x = displ, y = cty, colour = drv, size = cyl)) +
 geom_point(alpha = 0.5) +
-labs(title = "Cylinders vs city miles per gallon by drivetrain and engine displacement") +
+labs(title = "Engine displacement vs city miles per gallon by drivetrain and cylinders") +
 scale_colour_shredR() +
 theme_shredR(grids = TRUE)
 ```

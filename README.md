@@ -2,8 +2,8 @@
 # ggshredR
 
 Colour palettes and plotting themes for shredR 80s guitar theme.
-Incredible example below of ![Racer X (Source:
-Discogs)](https://github.com/hendersontrent/ggshredR/blob/master/racerx.jpg)
+Incredible example below of Racer X
+![](https://github.com/hendersontrent/ggshredR/blob/master/racerx.jpg)
 
 ## Installation
 
@@ -45,9 +45,9 @@ scales::show_col(ggshredR:::shredR_palette)
 Use `scale_colour_shredR()` to apply the theme for colour parameters.
 
 ``` r
-ggplot(mpg, aes(x = cyl, y = cty, colour = drv)) +
-geom_point(size = 3) +
-labs(title = "Cylinders vs city miles per gallon by drivetrain") +
+ggplot(mpg, aes(x = displ, y = cty, colour = drv, size = cyl)) +
+geom_point(alpha = 0.5) +
+labs(title = "Engine displacement vs city miles per gallon by drivetrain and cylinders") +
 scale_colour_shredR() +
 theme_shredR(grids = TRUE)
 ```
