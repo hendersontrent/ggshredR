@@ -49,7 +49,7 @@ scale_fill_shredR <- function(...) {
 #' @export
 
 theme_shredR <- function(grids = FALSE){
-  the_theme <- ggplot2::theme_bw(base_family = "Bodoni 72") +
+  the_theme <- ggplot2::theme_bw() +
     ggplot2::theme(legend.position = "bottom",
           axis.text = ggplot2::element_text(colour = "#F652A0"),
           axis.title = ggplot2::element_text(colour = "#F652A0", face = "bold"),
