@@ -44,7 +44,6 @@ scale_fill_shredR <- function(...) {
 
 #' Style general plot features according to the shredR theme
 #'
-#' @import extrafont
 #' @rdname theme_shredR
 #' @export
 
