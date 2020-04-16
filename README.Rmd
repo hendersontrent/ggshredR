@@ -4,7 +4,7 @@ output: github_document
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
-comment = NA, fig.width = 6, fig.height = 4, cache = FALSE)
+comment = NA, cache = FALSE)
 ```
 
 # ggshredR
