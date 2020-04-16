@@ -16,5 +16,4 @@ Imports:
     extrafont,
     grid,
     gridExtra,
-    png,
-    RCurl
+    png

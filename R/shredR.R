@@ -81,8 +81,7 @@ theme_shredR <- function(grids = FALSE){
 #' @export
 #' 
 make_it_shred <- function(){
-  the_url <- "https://github.com/hendersontrent/ggshredR/blob/master/vai.png"
-  img <- png::readPNG(RCurl::getURLContent(the_url))
+  img <- png::readPNG("inst/vai.png")
   img_trans <- matrix(rgb(img[,,1],img[,,2],img[,,3],img[,,4] * 0.2), nrow = dim(img)[1])
   
   vai <- grid::rasterGrob(img_trans)
