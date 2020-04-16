@@ -47,7 +47,7 @@ Use `scale_colour_shredR()` to apply the theme for colour parameters.
 ``` r
 ggplot(mpg, aes(x = displ, y = cty, colour = drv, size = cyl)) +
 geom_point(alpha = 0.5) +
-labs(title = "Engine displacement vs city miles per gallon by drivetrain and cylinders") +
+labs(title = "Engine disp vs city mpg by drivetrain and cylinders") +
 scale_colour_shredR() +
 theme_shredR(grids = TRUE)
 ```
@@ -63,7 +63,7 @@ library(mgcv)
 ggplot(mpg, aes(x = displ, y = cty, colour = drv, size = cyl)) +
 geom_smooth(aes(group = 1), formula = y ~ s(x), method = "gam", size = 1) +
 geom_point(alpha = 0.5) +
-labs(title = "Engine displacement vs city miles per gallon by drivetrain and cylinders") +
+labs(title = "Engine disp vs city mpg by drivetrain and cylinders") +
 scale_colour_shredR() +
 theme_shredR(grids = TRUE)
 ```
