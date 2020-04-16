@@ -5,7 +5,7 @@
 \alias{shredR_palette}
 \title{General colour palette imports as hex codes}
 \format{
-An object of class \code{character} of length 6.
+An object of class \code{character} of length 7.
 }
 \usage{
 shredR_palette
