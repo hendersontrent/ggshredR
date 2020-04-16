@@ -89,7 +89,7 @@ theme_shredR()
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-## You can also add a Whitesnake-era Steve Vai watermark to ensure your riffs (and plots) are tight.
+## You can also add a watermark of a 1980s shred lord to ensure your riffs (and plots) are tight.
 
 This is achieved through the `make_it_shred` function. This function
 lets you specify the surname of a shred guitar legend who was prominent
