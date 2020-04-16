@@ -93,5 +93,5 @@ make_it_shred() +
 geom_point(alpha = 0.5) +
 labs(title = "Engine disp vs city mpg by drivetrain and cylinders") +
 scale_colour_shredR() +
-theme_shredR(grids = TRUE)
+theme_shredR(grids = FALSE)
 ```
