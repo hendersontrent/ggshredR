@@ -9,7 +9,7 @@ comment = NA, fig.width = 6, fig.height = 4, cache = FALSE)
 
 # ggshredR
 
-Colour palettes and plotting themes for shredR 80s guitar theme. Incredible example below of ![Racer X](https://www.google.com/search?q=racer+x+band&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiJ_J_5yuvoAhUG4jgGHdZ5ABwQ_AUoAXoECBYQAw&biw=1440&bih=821#imgrc=5Us47XXgwbdo8M)
+Colour palettes and plotting themes for shredR 80s guitar theme. Incredible example below of ![Racer X (Source: Discogs)](https://github.com/hendersontrent/ggshredR/blob/master/racerx.jpg)
 
 ## Installation
 
