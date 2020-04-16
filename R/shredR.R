@@ -7,7 +7,7 @@ shredR_palette <- c(
   "#32CD30",
   "#FEDE00",
   "#43B0F1",
-  "#FEE7E6"
+  "#C8F4F9"
 )
 
 #' shredR Colour and Fill Scales
@@ -56,17 +56,17 @@ theme_shredR <- function(grids = FALSE){
           panel.grid.minor = ggplot2::element_blank(),
           panel.grid.major = ggplot2::element_blank(),
           axis.line = ggplot2::element_line(colour = "#F652A0"),
-          panel.background = ggplot2::element_rect(fill = "#FEE7E6", colour = "#FEE7E6"),
-          plot.background = ggplot2::element_rect(fill = "#FEE7E6", colour = "#FEE7E6"),
-          legend.background = ggplot2::element_rect(fill = "#FEE7E6", colour = "#FEE7E6"),
-          legend.box.background = ggplot2::element_rect(fill = "#E7F2F8", colour = "#FEE7E6"),
-          legend.key = ggplot2::element_rect(fill = "#FEE7E6", colour = "#FEE7E6"),
+          panel.background = ggplot2::element_rect(fill = "#C8F4F9", colour = "#C8F4F9"),
+          plot.background = ggplot2::element_rect(fill = "#C8F4F9", colour = "#C8F4F9"),
+          legend.background = ggplot2::element_rect(fill = "#C8F4F9", colour = "#C8F4F9"),
+          legend.box.background = ggplot2::element_rect(fill = "#E7F2F8", colour = "#C8F4F9"),
+          legend.key = ggplot2::element_rect(fill = "#C8F4F9", colour = "#C8F4F9"),
           legend.text = ggplot2::element_text(colour = "#F652A0"),
           legend.title = ggplot2::element_text(colour = "#F652A0"),
           plot.title = ggplot2::element_text(colour = "#F652A0"),
           plot.subtitle = ggplot2::element_text(colour = "#F652A0"),
           plot.caption = ggplot2::element_text(colour = "#F652A0"),
-          strip.background = ggplot2::element_rect(fill = "#FEE7E6", colour = "#F652A0"),
+          strip.background = ggplot2::element_rect(fill = "#C8F4F9", colour = "#F652A0"),
           strip.text = ggplot2::element_text(colour = "#F652A0"))
   if(grids){
     the_theme <- the_theme +
