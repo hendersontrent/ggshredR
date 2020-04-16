@@ -91,7 +91,7 @@ make_it_shred <- function(shred_lord = c("Vai", "Satriani", "Gilbert", "Malmstee
   
   if(shred_lord == "Becker"){
     img <- png::readPNG(system.file("img", "becker.png", package = "ggshredR"), FALSE)
-    img_trans <- matrix(rgb(img[,,1],img[,,2],img[,,3],img[,,4] * 0.2), nrow = dim(img)[1])
+    img_trans <- matrix(rgb(img[,,1],img[,,2],img[,,3],img[,,4] * 0.4), nrow = dim(img)[1])
     
     shred <- grid::rasterGrob(img_trans)
     
