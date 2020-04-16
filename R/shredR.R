@@ -81,7 +81,7 @@ theme_shredR <- function(grids = FALSE){
 #' @export
 #' 
 make_it_shred <- function(){
-  img <- png::readPNG(system.file("image/vai.png", "ggshredR"))
+  img <- png::readPNG(system.file("img", "vai.png", package = "ggshredR"), FALSE)
   img_trans <- matrix(rgb(img[,,1],img[,,2],img[,,3],img[,,4] * 0.2), nrow = dim(img)[1])
   
   vai <- grid::rasterGrob(img_trans)
