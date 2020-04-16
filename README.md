@@ -54,6 +54,22 @@ theme_shredR(grids = TRUE)
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
+Fitting regression models such as generalised additive models (GAM) to
+charts also looks very shreddy.
+
+``` r
+library(mgcv)
+
+ggplot(mpg, aes(x = displ, y = cty, colour = drv, size = cyl)) +
+geom_smooth(aes(group = 1), formula = y ~ s(x), method = "gam", size = 1) +
+geom_point(alpha = 0.5) +
+labs(title = "Engine displacement vs city miles per gallon by drivetrain and cylinders") +
+scale_colour_shredR() +
+theme_shredR(grids = TRUE)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
 And `scale_fill_shredR()` to apply the theme for fill parameters.
 
 ``` r
@@ -71,4 +87,4 @@ scale_fill_shredR() +
 theme_shredR()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
