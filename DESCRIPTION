@@ -16,4 +16,5 @@ Imports:
     extrafont,
     grid,
     gridExtra,
-    png
+    png,
+    magick
