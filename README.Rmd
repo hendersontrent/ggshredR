@@ -82,3 +82,16 @@ labs(title = "Average city miles per gallon by drivetrain") +
 scale_fill_shredR() +
 theme_shredR()
 ```
+
+## You can also add a Whitesnake-era Steve Vai watermark to ensure your riffs (and plots) are tight.
+
+This is achieved through the `make_it_shred` function.
+
+```{r}
+ggplot(mpg, aes(x = displ, y = cty, colour = drv, size = cyl)) +
+make_it_shred() +
+geom_point(alpha = 0.5) +
+labs(title = "Engine disp vs city mpg by drivetrain and cylinders") +
+scale_colour_shredR() +
+theme_shredR(grids = TRUE)
+```
