@@ -74,20 +74,3 @@ theme_shredR <- function(grids = FALSE){
   
   return(the_theme)
 }
-
-#' Add Whitesnake-era Steve Vai watermark
-#'
-#' @rdname make_it_shred
-#' @export
-#' 
-make_it_shred <- function(){
-  img <- png::readPNG(system.file("img", "vai.png", package = "ggshredR"), FALSE)
-  img_trans <- matrix(rgb(img[,,1],img[,,2],img[,,3],img[,,4] * 0.2), nrow = dim(img)[1])
-  
-  vai <- grid::rasterGrob(img_trans)
-  
-  vai_theme <- ggplot2::annotation_custom(vai, xmin = -Inf, xmax = Inf,
-                                          ymin = -Inf, ymax = Inf)
-  
-  return(vai_theme)
-}
