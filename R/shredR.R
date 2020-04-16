@@ -69,7 +69,7 @@ theme_shredR <- function(grids = FALSE){
           strip.text = ggplot2::element_text(colour = "#F652A0"))
   if(grids){
     the_theme <- the_theme +
-      ggplot2::theme(panel.grid.major = ggplot2::element_line(colour = "black"))
+      ggplot2::theme(panel.grid.major = ggplot2::element_line(colour = "#D4F1F4", size = 0.5))
   }
   
   return(the_theme)
