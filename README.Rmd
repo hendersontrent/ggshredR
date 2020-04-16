@@ -85,11 +85,12 @@ theme_shredR()
 
 ## You can also add a Whitesnake-era Steve Vai watermark to ensure your riffs (and plots) are tight.
 
-This is achieved through the `make_it_shred` function.
+This is achieved through the `make_it_shred` function. This function lets you specify the surname of a shred guitar legend who was prominent in the 80s.
 
 ```{r}
 ggplot(mpg, aes(x = displ, y = cty, colour = drv, size = cyl)) +
-make_it_shred() +
+make_it_shred(shred_lord = "Vai") +
+geom_smooth(aes(group = 1), formula = y ~ s(x), method = "gam", size = 1) +
 geom_point(alpha = 0.5) +
 labs(title = "Engine disp vs city mpg by drivetrain and cyl") +
 scale_colour_shredR() +
